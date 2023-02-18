@@ -20,7 +20,7 @@ def gradingStudents(n):
         if i < 38:
             roundedGrades.append(i)
         else:
-            nextMultipleOf5 = (i / 5 + 1) * 5
+            nextMultipleOf5 = (i // 5 + 1) * 5
             if nextMultipleOf5 - i < 3:
                 roundedGrades.append(nextMultipleOf5)
             else:
